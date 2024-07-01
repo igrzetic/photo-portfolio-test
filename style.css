@@ -1,0 +1,247 @@
+:root {
+    --prim_color: #141414;
+    --second_color: #cfc1ae;
+    --accent_color: #fff;
+}
+
+@font-face {
+    font-family: 'Druk Wide Bold Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Druk Wide Bold Bold'), url('DrukWideBold.woff') format('woff');
+}
+
+.logo, h1, h2, span {
+    font-family:'Durk Wide Bold Bold', sans-serif ;
+}
+
+h1 {
+    font-size: 84px;
+}
+
+h2 {
+    font-size: 34;
+}
+
+p {
+    font-size: 24px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 4%;
+    padding: 0;
+    background-color: var(--prim_color);
+    letter-spacing: 1.5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: var(--prim_color);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--prim_color);
+    line-height: 1;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+header button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid var(--prim_color);
+    color: var(--prim_color);
+    cursor: pointer;
+}
+
+header button:hover {
+    color: var(--accent_color);
+    background-color: var(--prim_color);
+    transition: 0.3s ease-in-out;
+}
+
+header, .hero, .about, .projects, footer {
+    background-color: var(--second_color);
+    color: var(--prim_color);
+    padding: 30px;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hero h2 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.hero-div {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+.hero p, .hero img {
+    border-radius: 20px;
+}
+
+.hero p {
+    background-color: var(--prim_color);
+    color: var(--second_color);
+    width: 45%;
+    text-align: left;
+    padding: 30px;
+    line-height: 160%;
+    margin: 0;
+}
+
+.hero img {
+    width: 55%;
+}
+
+hr.divider {
+    border: none;
+    height: 2px;
+    background-color: #a79d8d;
+    margin: 0 30px;
+    
+}
+
+.about {
+    padding-top: 0;
+
+}
+
+.about-text {
+    display: flex;
+    gap: 20px;
+}
+
+.about-text h2 {
+    width: 45%;
+    margin: 0;
+}
+
+.about-text p {
+    line-height: 160%;
+    width: 55%;
+    text-align: left;
+    margin: 0;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    margin-top: 35px;
+}
+
+.about-images img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.featured-works {
+    margin-bottom: 60px;
+}
+
+.featured-works h1 {
+    color: var(--second_color);
+    text-align: center;
+    margin: 0;
+    padding: 60px 30px;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.work-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px;
+    margin: 0;
+    border-radius: 20px;
+    font-size: 34px;
+    background-color: #333;
+    color: var(--accent_color);
+    cursor: pointer;
+}
+
+.work-item:hover {
+    background-color: #c8c8c8c6;
+    color: var(--prim_color);
+    transition: 0.3s ease-in-out;
+}
+
+.projects hr.divider {
+    margin: 60px 0 20px 0;
+    background-color: var(--prim_color);
+}
+
+.projects h1 {
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#project-item-1 img, #project-item-2 img{
+    width: 100%;
+    height: 400px;
+}
+
+#project-item-3 img {
+    width: 620px;
+    height: 450px;
+}
+
+#project-item-4 img {
+    width: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    /* margin: 0 10px; */
+    text-decoration: none;
+}
